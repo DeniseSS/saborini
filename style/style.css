@@ -1,0 +1,421 @@
+:root {
+  --saborini-red: #de2226;
+  --saborini-red-dark: #b91c20;
+  --saborini-orange: #ea7b24;
+  --saborini-light: #fff6f3;
+  --saborini-text: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--saborini-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.brand {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+/* =========================
+       HEADER
+    ========================= */
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.brand {
+  font-size: 1.8rem;
+  color: var(--saborini-red);
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--saborini-orange);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #333;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--saborini-red);
+}
+
+.btn-brand {
+  background-color: var(--saborini-red);
+  border-color: var(--saborini-red);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.7rem 1.25rem;
+}
+
+.btn-brand:hover {
+  background-color: var(--saborini-red-dark);
+  border-color: var(--saborini-red-dark);
+  color: #fff;
+}
+
+.btn-outline-brand {
+  color: var(--saborini-red);
+  border: 2px solid var(--saborini-red);
+  font-weight: 700;
+}
+
+.btn-outline-brand:hover {
+  background-color: var(--saborini-red);
+  color: #fff;
+}
+
+/* =========================
+       HERO
+    ========================= */
+
+.hero {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 246, 243, 0.98) 0%,
+    rgba(255, 246, 243, 0.92) 55%,
+    rgba(255, 246, 243, 0.35) 100%
+  );
+
+  padding: 100px 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--saborini-red);
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  border-radius: 50rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero h1 span {
+  color: var(--saborini-red);
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 650px;
+  color: #555;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+       CREDIBILIDADE
+    ========================= */
+
+.trust-section {
+  padding: 55px 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.trust-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.trust-number {
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--saborini-red);
+}
+
+.trust-label {
+  color: #666;
+  font-weight: 600;
+}
+
+/* =========================
+       SEÇÕES
+    ========================= */
+
+.section {
+  padding: 90px 0;
+}
+
+.section-soft {
+  background: var(--saborini-light);
+}
+
+.section-title {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.section-label {
+  color: var(--saborini-red);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+/* =========================
+       SERVIÇOS
+    ========================= */
+
+.service-card {
+  height: 100%;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 1.75rem;
+}
+
+.service-content h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.service-link {
+  color: var(--saborini-red);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* =========================
+       DIFERENCIAIS
+    ========================= */
+
+.differential {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.differential-number {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--saborini-red);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.differential p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* =========================
+       SOBRE
+    ========================= */
+
+.about-box {
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 3rem;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+}
+
+.about-list {
+  padding-left: 1.2rem;
+}
+
+.about-list li {
+  margin-bottom: 0.6rem;
+}
+
+/* =========================
+       CARDÁPIO
+    ========================= */
+
+.menu-table {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+       CLIENTES
+    ========================= */
+
+.client-box {
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background: #fff;
+}
+
+/* =========================
+       EQUIPAMENTOS
+    ========================= */
+
+.equipment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.equipment-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+
+.equipment-list li::before {
+  content: "✓";
+  color: var(--saborini-red);
+  font-weight: 800;
+  margin-right: 0.75rem;
+}
+
+/* =========================
+       CTA
+    ========================= */
+
+.cta-section {
+  background: var(--saborini-red);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+}
+
+.cta-section p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+.btn-light-custom {
+  background: #fff;
+  color: var(--saborini-red);
+  font-weight: 800;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-light-custom:hover {
+  background: #f5f5f5;
+  color: var(--saborini-red-dark);
+}
+
+/* =========================
+       FOOTER
+    ========================= */
+
+footer {
+  background: #171717;
+  color: #fff;
+  padding: 60px 0 25px;
+}
+
+footer .brand {
+  color: #fff;
+}
+
+footer .brand span {
+  color: var(--saborini-orange);
+}
+
+footer p,
+footer li {
+  color: #aaa;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* =========================
+       RESPONSIVO
+    ========================= */
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-image {
+    margin-top: 3rem;
+    height: 350px;
+  }
+}
