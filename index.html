@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Saborini — Alimentação corporativa em São Paulo. Refeições transportadas, kit lanche e soluções para refeitórios."
+    />
+
+    <meta name="author" content="Saborini" />
+    <meta name="theme-color" content="#DE2226" />
+
+    <title>Saborini | Alimentação Corporativa</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --saborini-red: #de2226;
+        --saborini-red-dark: #b91c20;
+        --saborini-orange: #ea7b24;
+        --saborini-light: #fff6f3;
+        --saborini-text: #212529;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        color: var(--saborini-text);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      .brand {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      /* =========================
+       HEADER
+    ========================= */
+
+      .site-header {
+        background: #fff;
+        border-bottom: 1px solid #eee;
+      }
+
+      .brand {
+        font-size: 1.8rem;
+        color: var(--saborini-red);
+        text-decoration: none;
+      }
+
+      .brand span {
+        color: var(--saborini-orange);
+      }
+
+      .navbar-nav .nav-link {
+        font-weight: 600;
+        color: #333;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: var(--saborini-red);
+      }
+
+      .btn-brand {
+        background-color: var(--saborini-red);
+        border-color: var(--saborini-red);
+        color: #fff;
+        font-weight: 700;
+        padding: 0.7rem 1.25rem;
+      }
+
+      .btn-brand:hover {
+        background-color: var(--saborini-red-dark);
+        border-color: var(--saborini-red-dark);
+        color: #fff;
+      }
+
+      .btn-outline-brand {
+        color: var(--saborini-red);
+        border: 2px solid var(--saborini-red);
+        font-weight: 700;
+      }
+
+      .btn-outline-brand:hover {
+        background-color: var(--saborini-red);
+        color: #fff;
+      }
+
+      /* =========================
+       HERO
+    ========================= */
+
+      .hero {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 246, 243, 0.98) 0%,
+          rgba(255, 246, 243, 0.92) 55%,
+          rgba(255, 246, 243, 0.35) 100%
+        );
+
+        padding: 100px 0;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background: var(--saborini-red);
+        color: #fff;
+        padding: 0.45rem 0.9rem;
+        border-radius: 50rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 4.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+
+      .hero h1 span {
+        color: var(--saborini-red);
+      }
+
+      .hero-text {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        max-width: 650px;
+        color: #555;
+      }
+
+      .hero-actions {
+        margin-top: 2rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 1.25rem;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+      }
+
+      /* =========================
+       CREDIBILIDADE
+    ========================= */
+
+      .trust-section {
+        padding: 55px 0;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+      }
+
+      .trust-item {
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .trust-number {
+        font-family: "Manrope", sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--saborini-red);
+      }
+
+      .trust-label {
+        color: #666;
+        font-weight: 600;
+      }
+
+      /* =========================
+       SEÇÕES
+    ========================= */
+
+      .section {
+        padding: 90px 0;
+      }
+
+      .section-soft {
+        background: var(--saborini-light);
+      }
+
+      .section-title {
+        max-width: 720px;
+        margin: 0 auto 50px;
+        text-align: center;
+      }
+
+      .section-title h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .section-title p {
+        color: #666;
+        font-size: 1.1rem;
+      }
+
+      .section-label {
+        color: var(--saborini-red);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-weight: 800;
+        font-size: 0.8rem;
+      }
+
+      /* =========================
+       SERVIÇOS
+    ========================= */
+
+      .service-card {
+        height: 100%;
+        border: 1px solid #eee;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #fff;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .service-image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .service-content {
+        padding: 1.75rem;
+      }
+
+      .service-content h3 {
+        font-size: 1.35rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .service-content p {
+        color: #666;
+        line-height: 1.7;
+      }
+
+      .service-link {
+        color: var(--saborini-red);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      /* =========================
+       DIFERENCIAIS
+    ========================= */
+
+      .differential {
+        height: 100%;
+        padding: 2rem;
+        border-radius: 1rem;
+        background: #fff;
+        border: 1px solid #eee;
+      }
+
+      .differential-number {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--saborini-red);
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      .differential p {
+        color: #666;
+        margin-bottom: 0;
+      }
+
+      /* =========================
+       SOBRE
+    ========================= */
+
+      .about-box {
+        background: #fff;
+        border-radius: 1.25rem;
+        padding: 3rem;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+      }
+
+      .about-list {
+        padding-left: 1.2rem;
+      }
+
+      .about-list li {
+        margin-bottom: 0.6rem;
+      }
+
+      /* =========================
+       CARDÁPIO
+    ========================= */
+
+      .menu-table {
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+      }
+
+      /* =========================
+       CLIENTES
+    ========================= */
+
+      .client-box {
+        border: 1px solid #eee;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        background: #fff;
+      }
+
+      /* =========================
+       EQUIPAMENTOS
+    ========================= */
+
+      .equipment-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .equipment-list li {
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+        font-weight: 600;
+      }
+
+      .equipment-list li::before {
+        content: "✓";
+        color: var(--saborini-red);
+        font-weight: 800;
+        margin-right: 0.75rem;
+      }
+
+      /* =========================
+       CTA
+    ========================= */
+
+      .cta-section {
+        background: var(--saborini-red);
+        color: #fff;
+        padding: 80px 0;
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+      }
+
+      .cta-section p {
+        font-size: 1.15rem;
+        opacity: 0.9;
+      }
+
+      .btn-light-custom {
+        background: #fff;
+        color: var(--saborini-red);
+        font-weight: 800;
+        padding: 0.8rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-light-custom:hover {
+        background: #f5f5f5;
+        color: var(--saborini-red-dark);
+      }
+
+      /* =========================
+       FOOTER
+    ========================= */
+
+      footer {
+        background: #171717;
+        color: #fff;
+        padding: 60px 0 25px;
+      }
+
+      footer .brand {
+        color: #fff;
+      }
+
+      footer .brand span {
+        color: var(--saborini-orange);
+      }
+
+      footer p,
+      footer li {
+        color: #aaa;
+      }
+
+      footer a {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #fff;
+      }
+
+      /* =========================
+       RESPONSIVO
+    ========================= */
+
+      @media (max-width: 991px) {
+        .hero {
+          padding: 70px 0;
+        }
+
+        .hero-image {
+          margin-top: 3rem;
+          height: 350px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="brand" href="#inicio"> Sabor<span>ini</span> </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Início</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#diferenciais">Diferenciais</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#cardapio">Cardápio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#clientes">Clientes</a>
+              </li>
+            </ul>
+
+            <a
+              href="https://wa.me/5511940097024"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-brand"
+            >
+              Solicitar orçamento
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+     HERO
+========================================================= -->
+
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="hero-badge">
+              Alimentação corporativa em São Paulo
+            </span>
+
+            <h1>
+              Refeições saborosas,
+              <span>no horário certo</span>
+              para sua empresa.
+            </h1>
+
+            <p class="hero-text mt-4">
+              A Saborini entrega refeições transportadas, kit lanche e soluções
+              para refeitórios, com qualidade, higiene e pontualidade todos os
+              dias.
+            </p>
+
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/5511940097024"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-brand btn-lg"
+              >
+                Solicitar orçamento
+              </a>
+
+              <a href="#servicos" class="btn btn-outline-brand btn-lg">
+                Conheça nossos serviços
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+              alt="Refeição preparada para alimentação corporativa"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CREDIBILIDADE
+========================================================= -->
+
+    <section class="trust-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-number">15+</div>
+              <div class="trust-label">anos de experiência</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-number">SP</div>
+              <div class="trust-label">atendimento em São Paulo</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-number">100%</div>
+              <div class="trust-label">foco corporativo</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-number">2</div>
+              <div class="trust-label">opções de proteína</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVIÇOS
+========================================================= -->
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label"> Nossos serviços </span>
+
+          <h2>Soluções de alimentação para empresas</h2>
+
+          <p>
+            Estrutura, variedade e praticidade para que sua empresa possa se
+            concentrar no que realmente importa.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Serviço 1 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                alt="Refeições transportadas"
+                class="service-image"
+              />
+
+              <div class="service-content">
+                <h3>Refeições transportadas</h3>
+
+                <p>
+                  Fornecemos refeições transportadas em caixas Hot Box, com ou
+                  sem funcionários para administrar o seu refeitório.
+                </p>
+
+                <a href="#contato" class="service-link">
+                  Solicitar orçamento →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Serviço 2 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=800&q=80"
+                alt="Kit lanche corporativo"
+                class="service-image"
+              />
+
+              <div class="service-content">
+                <h3>Kit lanche</h3>
+
+                <p>
+                  Frutas, sanduíches, sucos e diferentes combinações para
+                  reuniões, eventos e equipes.
+                </p>
+
+                <a href="#contato" class="service-link">
+                  Solicitar orçamento →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Serviço 3 -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <img
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+                alt="Estrutura de refeitório"
+                class="service-image"
+              />
+
+              <div class="service-content">
+                <h3>Estrutura para refeitórios</h3>
+
+                <p>
+                  Equipamentos e utensílios necessários para o funcionamento
+                  adequado do seu refeitório.
+                </p>
+
+                <a href="#equipamentos" class="service-link">
+                  Conhecer estrutura →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     DIFERENCIAIS
+========================================================= -->
+
+    <section id="diferenciais" class="section section-soft">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label"> Por que a Saborini </span>
+
+          <h2>Alimentação com qualidade e confiança</h2>
+
+          <p>
+            Mais do que fornecer refeições, buscamos oferecer tranquilidade para
+            nossos clientes.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="differential">
+              <div class="differential-number">01</div>
+
+              <h3>Qualidade e higiene</h3>
+
+              <p>Padrões rigorosos em todas as etapas, do preparo à entrega.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="differential">
+              <div class="differential-number">02</div>
+
+              <h3>Pontualidade</h3>
+
+              <p>Entregas no horário combinado, todos os dias.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="differential">
+              <div class="differential-number">03</div>
+
+              <h3>Cardápio variado</h3>
+
+              <p>
+                Opções que mudam com frequência, incluindo restrições
+                alimentares.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="differential">
+              <div class="differential-number">04</div>
+
+              <h3>Atendimento próximo</h3>
+
+              <p>Equipe disponível para ajustar pedidos e necessidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SOBRE
+========================================================= -->
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="about-box">
+              <span class="section-label"> Sobre a Saborini </span>
+
+              <h2 class="mt-2 mb-4">Uma empresa ética e transparente</h2>
+
+              <p class="lead">
+                Instalados no CENESP e atuando há mais de 15 anos, oferecemos
+                serviços que despreocupam nossos clientes com qualidade, preços
+                e opções.
+              </p>
+
+              <p>
+                Nosso objetivo é permitir que as empresas se concentrem apenas
+                em seus negócios, deixando a alimentação por nossa
+                responsabilidade.
+              </p>
+
+              <hr class="my-4" />
+
+              <blockquote class="blockquote">
+                <p>
+                  “Somos uma empresa ética e transparente, atendendo empresas
+                  como Unilever, Marsh, P&amp;G, Mapfre, Aesseal e Grati, entre
+                  outras.”
+                </p>
+              </blockquote>
+
+              <h3 class="mt-4">Fornecedores</h3>
+
+              <p>
+                Procuramos trabalhar sempre com fornecedores tradicionais e de
+                alta qualidade.
+              </p>
+
+              <ul class="about-list">
+                <li>Sadia</li>
+                <li>Aurora</li>
+                <li>Spal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CARDÁPIO
+========================================================= -->
+
+    <section id="cardapio" class="section section-soft">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label"> Alimentação personalizada </span>
+
+          <h2>Cardápio flexível para sua equipe</h2>
+
+          <p>
+            Duas opções de proteína em toda refeição, além de alternativas para
+            diferentes necessidades alimentares.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="bg-white rounded-4 p-4 p-md-5">
+              <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                  <h4>Prato principal</h4>
+
+                  <p class="text-body-secondary">
+                    Opção completa do dia, servida como referência do cardápio.
+                  </p>
+                </div>
+
+                <div class="col-md-4">
+                  <h4>Segunda opção</h4>
+
+                  <p class="text-body-secondary">
+                    Segunda alternativa de proteína disponível junto ao prato
+                    principal.
+                  </p>
+                </div>
+
+                <div class="col-md-4">
+                  <h4>Opções especiais</h4>
+
+                  <p class="text-body-secondary">
+                    Alternativas light, vegetarianas e veganas.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="mb-3">Exemplo de cardápio semanal</h3>
+
+              <p class="text-body-secondary">
+                Um modelo de como a semana pode ser organizada. O cardápio
+                completo é enviado sob consulta.
+              </p>
+
+              <div class="table-responsive menu-table">
+                <table class="table table-striped align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Dia</th>
+                      <th>Prato principal</th>
+                      <th>Opção</th>
+                      <th>Sobremesa</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Segunda</td>
+                      <td>Frango grelhado</td>
+                      <td>Carne assada</td>
+                      <td>Fruta da estação</td>
+                    </tr>
+
+                    <tr>
+                      <td>Terça</td>
+                      <td>Filé de peixe</td>
+                      <td>Escondidinho</td>
+                      <td>Doce caseiro</td>
+                    </tr>
+
+                    <tr>
+                      <td>Quarta</td>
+                      <td>Strogonoff</td>
+                      <td>Opção vegetariana</td>
+                      <td>Fruta da estação</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CLIENTES
+========================================================= -->
+
+    <section id="clientes" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label"> Experiência </span>
+
+          <h2>Empresas que confiam na Saborini</h2>
+
+          <p>
+            Experiência no atendimento corporativo e relacionamento com empresas
+            de diferentes segmentos.
+          </p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="client-box">Unilever</div>
+          </div>
+
+          <div class="col">
+            <div class="client-box">Marsh</div>
+          </div>
+
+          <div class="col">
+            <div class="client-box">P&amp;G</div>
+          </div>
+
+          <div class="col">
+            <div class="client-box">Mapfre</div>
+          </div>
+
+          <div class="col">
+            <div class="client-box">Aesseal</div>
+          </div>
+
+          <div class="col">
+            <div class="client-box">Grati</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     EQUIPAMENTOS
+========================================================= -->
+
+    <section id="equipamentos" class="section section-soft">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="section-label"> Estrutura completa </span>
+
+            <h2 class="mt-2 mb-4">Equipamentos para seu refeitório</h2>
+
+            <p class="lead">
+              Oferecemos os equipamentos e utensílios necessários para o bom
+              funcionamento do seu refeitório.
+            </p>
+          </div>
+
+          <div class="col-lg-5 offset-lg-1">
+            <ul class="equipment-list">
+              <li>Banho-maria</li>
+              <li>Pratos</li>
+              <li>Talheres</li>
+              <li>Copos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CTA
+========================================================= -->
+
+    <section id="contato" class="cta-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>Vamos conversar sobre a alimentação da sua empresa?</h2>
+
+            <p class="mb-0 mt-3">
+              Fale com nossa equipe e solicite uma proposta personalizada para
+              sua empresa.
+            </p>
+          </div>
+
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a
+              href="https://wa.me/5511940097024"
+              target="_blank"
+              rel="noopener"
+              class="btn-light-custom"
+            >
+              Solicitar orçamento
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FOOTER
+========================================================= -->
+
+    <footer>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-5">
+            <a href="#inicio" class="brand"> Sabor<span>ini</span> </a>
+
+            <p class="mt-3">
+              Alimentação corporativa em São Paulo, há mais de 15 anos.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Fale conosco</h4>
+
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <a
+                  href="https://wa.me/5511940097024"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  WhatsApp: (11) 94009-7024
+                </a>
+              </li>
+
+              <li class="mb-2">Telefone: (11) 2362-1175</li>
+
+              <li class="mb-2">
+                <a href="mailto:contato@saborini.com.br">
+                  contato@saborini.com.br
+                </a>
+              </li>
+
+              <li>Rua Olinda, 288 — São Paulo, SP</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4>Redes sociais</h4>
+
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <a href="#"> Instagram </a>
+              </li>
+
+              <li>
+                <a href="#"> Facebook </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-5 border-secondary" />
+
+        <p class="text-center mb-0">
+          © 2026 Saborini. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
