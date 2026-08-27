@@ -37,8 +37,12 @@
     <header class="site-header sticky-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="brand" href="#inicio"> Sabor<span>ini</span> </a>
+          <!-- Logo -->
+          <a class="navbar-brand brand" href="#inicio">
+            <img src="image/logo.jpg" alt="Saborini" class="logo" />
+          </a>
 
+          <!-- Botão mobile -->
           <button
             class="navbar-toggler"
             type="button"
@@ -51,14 +55,15 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- Menu -->
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#inicio">Início</a>
+                <a class="nav-link" href="#inicio"> Início </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#servicos">Serviços</a>
+                <a class="nav-link" href="#servicos"> Serviços </a>
               </li>
 
               <li class="nav-item">
@@ -70,18 +75,19 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#cardapio">Cardápio</a>
+                <a class="nav-link" href="#gastronomia">Gastronomia</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#clientes">Clientes</a>
+                <a class="nav-link" href="#cardapio">Cardápio</a>
               </li>
             </ul>
 
+            <!-- CTA -->
             <a
               href="https://wa.me/5511940097024"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="btn btn-brand"
             >
               Solicitar orçamento
@@ -133,7 +139,7 @@
 
           <div class="col-lg-6">
             <img
-              src="https://www.gnutriz.com.br/imagens/informacoes/refeicoes-transportadas-sao-paulo-04.jpg"
+              src="image/saborini-13.jpg"
               alt="Refeição preparada para alimentação corporativa"
               class="hero-image"
             />
@@ -149,31 +155,26 @@
     <section class="trust-section">
       <div class="container">
         <div class="row g-4">
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-lg-4">
             <div class="trust-item">
               <div class="trust-number">15+</div>
-              <div class="trust-label">anos de experiência</div>
+              <div class="trust-label">Anos de experiência</div>
             </div>
           </div>
 
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-lg-4">
             <div class="trust-item">
               <div class="trust-number">SP</div>
-              <div class="trust-label">atendimento em São Paulo</div>
+              <div class="trust-label">
+                Atendimento na Zona Sul de São Paulo
+              </div>
             </div>
           </div>
 
-          <div class="col-6 col-lg-3">
+          <div class="col-6 col-lg-4">
             <div class="trust-item">
               <div class="trust-number">100%</div>
-              <div class="trust-label">foco corporativo</div>
-            </div>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <div class="trust-item">
-              <div class="trust-number">2</div>
-              <div class="trust-label">opções de proteína</div>
+              <div class="trust-label">Foco corporativo</div>
             </div>
           </div>
         </div>
@@ -200,10 +201,10 @@
         <div class="row g-4">
           <!-- Serviço 1 -->
 
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4xEJ7ULAnLPkXl_E1-ld9CVDYdHsVYzXcjTHOelIRg&s=10"
+                src="image/foto_hotbox.jpg"
                 alt="Refeições transportadas"
                 class="service-image"
               />
@@ -225,7 +226,7 @@
 
           <!-- Serviço 2 -->
 
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uW-ltQ8w1ylMRXtTNLoXhfwjySZvBX4oumId1AtOeg&s=10"
@@ -250,7 +251,7 @@
 
           <!-- Serviço 3 -->
 
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmy6MMbt8YqFoo7540v8MwfTrfXAjHNmzSPg7XI9eAg&s=10"
@@ -264,6 +265,30 @@
                 <p>
                   Equipamentos e utensílios necessários para o funcionamento
                   adequado do seu refeitório.
+                </p>
+
+                <a href="#equipamentos" class="service-link">
+                  Conhecer estrutura →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="image/marmitas.jpeg"
+                alt="Estrutura de refeitório"
+                class="service-image"
+              />
+              <!-- Serviço 4 -->
+              <div class="service-content">
+                <h3>Marmitas corporativas</h3>
+
+                <p>
+                  Entregamos marmitas individuais diretamente na sua empresa,
+                  prontas para o consumo e com cardápios variados para o dia a
+                  dia dos seus colaboradores.
                 </p>
 
                 <a href="#equipamentos" class="service-link">
@@ -369,9 +394,7 @@
 
               <blockquote class="blockquote">
                 <p>
-                  “Somos uma empresa ética e transparente, atendendo empresas
-                  como Unilever, Marsh, P&amp;G, Mapfre, Aesseal e Grati, entre
-                  outras.”
+                  "Somos uma empresa que atua com ética, transparência e compromisso"
                 </p>
               </blockquote>
 
@@ -387,6 +410,85 @@
                 <li>Aurora</li>
                 <li>Spal</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     RESTAURANTE
+========================================================= -->
+    <section id="gastronomia" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">Nossa gastronomia</span>
+
+          <h2>Sabores que fazem parte da experiência</h2>
+
+          <p>
+            Pratos preparados com cuidado, variedade e qualidade para
+            proporcionar uma experiência especial em cada refeição.
+          </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/salmão.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/saborini-18.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/saborini-11.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/saborini-12.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/saborini-26.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="restaurant-card">
+              <img
+                src="image/saborini-10.jpg"
+                alt="Prato preparado pela Saborini"
+                class="restaurant-image"
+              />
             </div>
           </div>
         </div>
@@ -487,52 +589,6 @@
         </div>
       </div>
     </section>
-
-    <!-- =========================================================
-     CLIENTES
-========================================================= -->
-
-    <section id="clientes" class="section">
-      <div class="container">
-        <div class="section-title">
-          <span class="section-label"> Experiência </span>
-
-          <h2>Empresas que confiam na Saborini</h2>
-
-          <p>
-            Experiência no atendimento corporativo e relacionamento com empresas
-            de diferentes segmentos.
-          </p>
-        </div>
-
-        <div class="row row-cols-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="client-box">Unilever</div>
-          </div>
-
-          <div class="col">
-            <div class="client-box">Marsh</div>
-          </div>
-
-          <div class="col">
-            <div class="client-box">P&amp;G</div>
-          </div>
-
-          <div class="col">
-            <div class="client-box">Mapfre</div>
-          </div>
-
-          <div class="col">
-            <div class="client-box">Aesseal</div>
-          </div>
-
-          <div class="col">
-            <div class="client-box">Grati</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- =========================================================
      EQUIPAMENTOS
 ========================================================= -->
@@ -601,7 +657,13 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-md-5">
-            <a href="#inicio" class="brand"> Sabor<span>ini</span> </a>
+            <a href="#inicio" class="brand footer-brand">
+              <img
+                src="image/Logo_png.png"
+                alt="Saborini"
+                class="footer-logo"
+              />
+            </a>
 
             <p class="mt-3">
               Alimentação corporativa em São Paulo, há mais de 15 anos.
@@ -618,19 +680,19 @@
                   target="_blank"
                   rel="noopener"
                 >
-                  WhatsApp: (11) 94009-7024
+                  WhatsApp: (11) 99312-5558
                 </a>
               </li>
 
-              <li class="mb-2">Telefone: (11) 2362-1175</li>
+              <li class="mb-2">Telefone: (11) 3741-3200 / 7666</li>
 
               <li class="mb-2">
                 <a href="mailto:contato@saborini.com.br">
-                  contato@saborini.com.br
+                  saborinialimentos@hotmail.com
                 </a>
               </li>
 
-              <li>Rua Olinda, 288 — São Paulo, SP</li>
+              <li>Av. Maria Coelho Aguiar, 215 — São Paulo, SP</li>
             </ul>
           </div>
 
@@ -639,7 +701,9 @@
 
             <ul class="list-unstyled mt-3">
               <li class="mb-2">
-                <a href="#"> Instagram </a>
+                <a href="https://www.instagram.com/saborinicenesp/">
+                  Instagram
+                </a>
               </li>
 
               <li>
