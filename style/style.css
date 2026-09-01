@@ -373,7 +373,7 @@ h5,
   color: var(--saborini-red-dark);
 }
 .logo {
-  height: 55px;
+  height: 100px;
   width: auto;
   display: block;
   object-fit: contain;

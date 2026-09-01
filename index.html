@@ -11,8 +11,57 @@
 
     <meta name="author" content="Saborini" />
     <meta name="theme-color" content="#DE2226" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="format-detection" content="telephone=yes" />
 
-    <title>Saborini | Alimentação Corporativa</title>
+    <!-- SEO: adicione o domínio real no canonical antes da publicação -->
+    <!-- <link rel="canonical" href="https://www.seudominio.com.br/" /> -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Saborini" />
+    <meta property="og:title" content="Saborini | Alimentação corporativa em São Paulo" />
+    <meta property="og:description" content="Alimentação corporativa em São Paulo: refeições transportadas, marmitas corporativas, kit lanche e soluções para refeitórios." />
+    <meta property="og:image" content="image/saborini-13.jpg" />
+    <meta property="og:image:alt" content="Refeição preparada pela Saborini para alimentação corporativa" />
+
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saborini | Alimentação corporativa em São Paulo" />
+    <meta name="twitter:description" content="Refeições transportadas, marmitas corporativas, kit lanche e soluções para refeitórios em São Paulo." />
+    <meta name="twitter:image" content="image/saborini-13.jpg" />
+
+    <title>Saborini | Alimentação corporativa em São Paulo</title>
+
+    <!-- Dados estruturados: ajudam o Google a entender a empresa -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Caterer",
+      "name": "Saborini",
+      "description": "Empresa de alimentação corporativa em São Paulo, com refeições transportadas, marmitas corporativas, kit lanche e soluções para refeitórios.",
+      "telephone": "+55 11 99312-5558",
+      "email": "saborinialimentos@hotmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Maria Coelho Aguiar, 215",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "São Paulo"
+      },
+      "image": "image/saborini-13.jpg",
+      "logo": "image/Logo_png.png",
+      "sameAs": [
+        "https://www.instagram.com/saborinicenesp/"
+      ]
+    }
+    </script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="style/bootstrap.min.css" />
@@ -140,8 +189,10 @@
           <div class="col-lg-6">
             <img
               src="image/saborini-13.jpg"
-              alt="Refeição preparada para alimentação corporativa"
+              alt="Refeição preparada pela Saborini para alimentação corporativa em São Paulo"
               class="hero-image"
+              fetchpriority="high"
+              decoding="async"
             />
           </div>
         </div>
@@ -204,9 +255,11 @@
           <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <img
-                src="image/foto_hotbox.jpg"
-                alt="Refeições transportadas"
+                src="image/hotbox.png"
+                alt="Refeições transportadas em caixas Hot Box para empresas"
                 class="service-image"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="service-content">
@@ -230,8 +283,10 @@
             <div class="service-card">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uW-ltQ8w1ylMRXtTNLoXhfwjySZvBX4oumId1AtOeg&s=10"
-                alt="Kit lanche corporativo"
+                alt="Kit lanche corporativo com frutas, sanduíches e sucos"
                 class="service-image"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="service-content">
@@ -254,9 +309,11 @@
           <div class="col-md-6 col-lg-3">
             <div class="service-card">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmy6MMbt8YqFoo7540v8MwfTrfXAjHNmzSPg7XI9eAg&s=10"
-                alt="Estrutura de refeitório"
+                src="image/refeitorio.png"
+                alt="Equipamentos e estrutura para refeitório corporativo"
                 class="service-image"
+                loading="lazy"
+                decoding="async"
               />
 
               <div class="service-content">
@@ -268,7 +325,7 @@
                 </p>
 
                 <a href="#equipamentos" class="service-link">
-                  Conhecer estrutura →
+                  Conhecer estrutura para refeitórios →
                 </a>
               </div>
             </div>
@@ -278,8 +335,10 @@
             <div class="service-card">
               <img
                 src="image/marmitas.jpeg"
-                alt="Estrutura de refeitório"
+                alt="Equipamentos e estrutura para refeitório corporativo"
                 class="service-image"
+                loading="lazy"
+                decoding="async"
               />
               <!-- Serviço 4 -->
               <div class="service-content">
@@ -291,8 +350,8 @@
                   dia dos seus colaboradores.
                 </p>
 
-                <a href="#equipamentos" class="service-link">
-                  Conhecer estrutura →
+                <a href="#contato" class="service-link">
+                  Solicitar orçamento →
                 </a>
               </div>
             </div>
@@ -409,6 +468,9 @@
                 <li>Sadia</li>
                 <li>Aurora</li>
                 <li>Spal</li>
+                <li>Camil</li>
+                <li>Tirolez</li>
+                <li>Heinz & Hellmann's</li>
               </ul>
             </div>
           </div>
@@ -435,9 +497,11 @@
           <div class="col">
             <div class="restaurant-card">
               <img
-                src="image/salmão.jpg"
-                alt="Prato preparado pela Saborini"
+                src="image/saborini-06.jpg"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -446,8 +510,10 @@
             <div class="restaurant-card">
               <img
                 src="image/saborini-18.jpg"
-                alt="Prato preparado pela Saborini"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -456,8 +522,10 @@
             <div class="restaurant-card">
               <img
                 src="image/saborini-11.jpg"
-                alt="Prato preparado pela Saborini"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -466,8 +534,10 @@
             <div class="restaurant-card">
               <img
                 src="image/saborini-12.jpg"
-                alt="Prato preparado pela Saborini"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -476,8 +546,10 @@
             <div class="restaurant-card">
               <img
                 src="image/saborini-26.jpg"
-                alt="Prato preparado pela Saborini"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -486,8 +558,10 @@
             <div class="restaurant-card">
               <img
                 src="image/saborini-10.jpg"
-                alt="Prato preparado pela Saborini"
+                alt="Prato preparado pela Saborini para alimentação corporativa"
                 class="restaurant-image"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -662,6 +736,8 @@
                 src="image/Logo_png.png"
                 alt="Saborini"
                 class="footer-logo"
+                loading="lazy"
+                decoding="async"
               />
             </a>
 
@@ -687,7 +763,7 @@
               <li class="mb-2">Telefone: (11) 3741-3200 / 7666</li>
 
               <li class="mb-2">
-                <a href="mailto:contato@saborini.com.br">
+                <a href="mailto:saborinialimentos@hotmail.com">
                   saborinialimentos@hotmail.com
                 </a>
               </li>
@@ -701,13 +777,9 @@
 
             <ul class="list-unstyled mt-3">
               <li class="mb-2">
-                <a href="https://www.instagram.com/saborinicenesp/">
+                <a href="https://www.instagram.com/saborinicenesp/" target="_blank" rel="noopener noreferrer">
                   Instagram
                 </a>
-              </li>
-
-              <li>
-                <a href="#"> Facebook </a>
               </li>
             </ul>
           </div>
