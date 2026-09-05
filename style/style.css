@@ -373,7 +373,7 @@ h5,
   color: var(--saborini-red-dark);
 }
 .logo {
-  height: 100px;
+  height: 120px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -442,6 +442,340 @@ footer a:hover {
   height: auto;
   display: block;
   object-fit: contain;
+}
+.cardapio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--primary, #de2226);
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+}
+
+.cardapio-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.cardapio-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.cardapio-periodo {
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* TABELA */
+
+.cardapio-table {
+  overflow: hidden;
+  border: 0;
+  background: #fff;
+  border-radius: 0 0 16px 16px;
+}
+
+.cardapio-table thead th {
+  padding: 1rem 0.75rem;
+  background: #f3f3f3;
+  color: #343434;
+  border-bottom: 2px solid #dedede;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cardapio-table tbody td {
+  min-width: 120px;
+  padding: 1.25rem 0.8rem;
+  color: #454545;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cardapio-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.cardapio-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.cardapio-table .dia {
+  min-width: 105px;
+  background: #fafafa;
+  color: #222;
+}
+
+.cardapio-table .dia strong {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.cardapio-table .dia span {
+  display: block;
+  margin-top: 0.2rem;
+  color: #888;
+  font-size: 0.72rem;
+}
+
+.cardapio-table tbody td small {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--primary, #de2226);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+.cardapio-mobile {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+
+  .cardapio-desktop {
+    display: none;
+  }
+
+  .cardapio-mobile {
+    display: block;
+  }
+
+  .cardapio-mobile-header {
+    margin-bottom: 1rem;
+    padding: 1.25rem;
+    background: var(--primary, #de2226);
+    color: #fff;
+    border-radius: 16px;
+  }
+
+  .cardapio-mobile-header h3 {
+    margin: 0.25rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .cardapio-mobile-header p {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
+
+  /* ACCORDION */
+
+  .cardapio-mobile .accordion {
+    --bs-accordion-border-color: #e8e8e8;
+    --bs-accordion-border-radius: 12px;
+    --bs-accordion-inner-border-radius: 12px;
+  }
+
+  .cardapio-mobile .accordion-item {
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px !important;
+    background: #fff;
+  }
+
+  .cardapio-mobile .accordion-button {
+    padding: 1rem 1.1rem;
+    background: #fff;
+    color: #222;
+    box-shadow: none;
+  }
+
+  .cardapio-mobile .accordion-button:not(.collapsed) {
+    background: #fff7f5;
+    color: var(--primary, #de2226);
+    box-shadow: none;
+  }
+
+  .cardapio-mobile .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .cardapio-mobile .accordion-button > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardapio-mobile .accordion-button strong {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
+  .cardapio-mobile .accordion-button small {
+    margin-top: 0.15rem;
+    color: #888;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  .cardapio-mobile .accordion-button:not(.collapsed) small {
+    color: #999;
+  }
+
+  .cardapio-mobile .accordion-body {
+    padding: 0 1rem 1rem;
+  }
+
+
+  /* ITENS DO CARDÁPIO */
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .menu-item:last-child {
+    border-bottom: 0;
+  }
+
+  .menu-item span {
+    color: #888;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .menu-item strong {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .menu-item small {
+    color: var(--primary, #de2226);
+    font-size: 0.68rem;
+    font-weight: 800;
+  }
+
+  .menu-item.destaque {
+    margin: 0.35rem 0;
+    padding: 1rem;
+    background: #fff7f5;
+    border: 0;
+    border-radius: 10px;
+  }
+
+}
+.cardapio-mobile {
+  display: none;
+}
+
+.cardapio-table {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cardapio-table thead th {
+  background: var(--primary, #de2226);
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  border: 0;
+}
+
+.cardapio-table tbody th,
+.cardapio-table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.cardapio-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.cardapio-table small {
+  color: #777;
+}
+
+.accordion-item {
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .cardapio-desktop {
+    display: none;
+  }
+
+  .cardapio-mobile {
+    display: block;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 120px; /* mesmo valor da altura da logo no mobile */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar > .container {
+    position: relative;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand.brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    z-index: 2;
+  }
+  .navbar:has(.navbar-toggler[aria-expanded="true"]) .navbar-brand.brand {
+    display: none;
+  }
 }
 
 /* =========================
